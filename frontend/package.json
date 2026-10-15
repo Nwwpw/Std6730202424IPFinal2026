@@ -1,13 +1,25 @@
+cd C:\Std6730202424IPFinal2026\frontend
+@'
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "expo start",
+    "web": "expo start --web"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "@expo/metro-runtime": "~57.0.17",
+    "expo": "^57.0.29",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.86.3",
+    "react-native-web": "^0.21.2"
+  }
 }
+'@ | Set-Content -Path package.json -Encoding utf8
+Get-Content package.json
