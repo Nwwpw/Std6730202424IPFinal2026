@@ -1,5 +1,3 @@
-cd C:\Std6730202424IPFinal2026\frontend
-@'
 {
   "name": "frontend",
   "version": "1.0.0",
@@ -21,5 +19,3 @@ cd C:\Std6730202424IPFinal2026\frontend
     "react-native-web": "^0.21.2"
   }
 }
-'@ | Set-Content -Path package.json -Encoding utf8
-Get-Content package.json
