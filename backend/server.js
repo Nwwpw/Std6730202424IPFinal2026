@@ -10,7 +10,7 @@ const cors = require("cors");
 const mysql = require("mysql2/promise");
 
 const app = express();
-const PORT = process.env.PORT || 5000; // 2 ตรงกับ API_URL ฝั่ง Frontend
+const PORT = process.env.PORT || 3041; // 2 ตรงกับ API_URL ฝั่ง Frontend
 app.use(cors());
 app.use(express.json());
 
@@ -18,7 +18,7 @@ app.use(express.json());
 const DB_CONFIG = {
   host: process.env.DB_HOST, port: Number(process.env.DB_PORT) || 3306,
   user: process.env.DB_USER, password: process.env.DB_PASSWORD, database: process.env.DB_NAME,
-  connectTimeout: 5000, // 3 ต่อไม่ติดภายใน 5 วินาทีให้ล้มเลิก
+  connectTimeout: 3041, // 3 ต่อไม่ติดภายใน 5 วินาทีให้ล้มเลิก
 };
 const S = "_WipawinTung_6730202424"; // 4 ต่อท้ายชื่อตาราง/คอลัมน์
 const T = `employees${S}`;
