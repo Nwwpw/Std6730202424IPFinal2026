@@ -10,7 +10,7 @@ import {
   ActivityIndicator, Alert, StyleSheet, Platform, SafeAreaView,
 } from "react-native";
 
-const API_URL = "http://localhost:3041/api"; // 1 แก้ IP/พอร์ตตรงนี้ที่เดียว
+const API_URL = "http://119.59.102.161:3041/api"; // 1 ชี้ไป backend บนเซิร์ฟเวอร์
 
 // ---------- Helpers ----------
 const notify = (title, msg) => // 2 Alert ใช้ได้ทั้งมือถือและเว็บ
